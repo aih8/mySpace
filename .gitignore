@@ -1,0 +1,9 @@
+**/bower_components/
+**/node_modules/
+.idea/
+**/.browse.VC.db*
+**/unitTest/coverage
+node_modules/
+bower_components/
+
+package.json.rej
