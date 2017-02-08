@@ -1,9 +1,12 @@
-**/bower_components/
-**/node_modules/
-.idea/
-**/.browse.VC.db*
-**/unitTest/coverage
-node_modules/
-bower_components/
+# Node build artifacts
+node_modules
+npm-debug.log
 
-package.json.rej
+# Local development
+*.env
+*.dev
+.DS_Store
+
+# Docker
+Dockerfile
+docker-compose.yml
