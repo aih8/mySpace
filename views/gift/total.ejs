@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+
+<div class="container">
+    <h2>Database Results</h2>
+    <ul>
+        <% data.forEach(function(value, index, arr) { %>
+            <li>
+                <%= value.name %>
+            </li>
+        <% }) %>
+    </ul>
+
+</div>
+
+</body>
+</html>
