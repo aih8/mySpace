@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-function mogfn(uri, fn, res) {
+function mogfn(uri, fn, req, res) {
     mongoose.Promise = global.Promise;
     mongoose.connect(uri);
 
@@ -8,7 +8,7 @@ function mogfn(uri, fn, res) {
 
     db.on('error', console.error.bind(console, 'connection error:'));
 
-    db.once('open',fn(res));
+    db.once('open',fn(req, res));
 }
 
 exports.mogfn = mogfn;

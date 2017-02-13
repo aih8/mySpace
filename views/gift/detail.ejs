@@ -8,21 +8,21 @@
 
 
 <div class="container">
-    <h2 class="tac">排行榜</h2>
+    <h4 class="tac">详细信息</h4>
     <table class="table table-striped table-hover table-bordered">
         <thead>
         <tr>
-            <th>姓名</th>
+            <th>序号</th>
             <th>分数</th>
-            <th>操作</th>
+            <th>详情</th>
         </tr>
         </thead>
         <tbody>
-        <% data.forEach(function(value, index, arr) { %>
+        <% person.arr.forEach(function(value, index, arr) { %>
         <tr>
-            <td><%= value.name %></td>
-            <td><%= value.sum %></td>
-            <td><a href="./get/detail?id=<%= value.id %>">详情</a></td>
+            <td><%= index+1 %></td>
+            <td><%= value.amount %>元</td>
+            <td><%= value.reason%></td>
         </tr>
         <% }) %>
         </tbody>
@@ -31,4 +31,8 @@
 </div>
 
 </body>
+<script>
+    var username = <%= JSON.stringify(person.arr) %>;
+    console.log(username);
+</script>
 </html>

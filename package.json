@@ -12,7 +12,15 @@
   "dependencies": {
     "ejs": "2.4.1",
     "express": "4.13.3",
-    "mongoose": ""
+    "mongoose": "",
+    "querystring": "",
+    "body-parser": "",
+    "multer": "",
+    "angular-ui-router": "0.2.18",
+    "angular": "1.5.8",
+    "angular-animate": "1.5.8",
+    "angular-sanitize": "1.5.8",
+    "weui": "^0.4.3"
   },
   "repository": {
     "type": "git",

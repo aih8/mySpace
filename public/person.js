@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 
-exports.person = function () {
+exports.person = (function () {
     // Create psrson schema
     var Schema = mongoose.Schema({
         name: String,
@@ -12,4 +12,4 @@ exports.person = function () {
 // Store psrson documents in a collection called "psrsons"
     var person = mongoose.model('psrsons', Schema);
     return person;
-};
+})();
